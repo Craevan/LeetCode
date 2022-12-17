@@ -11,10 +11,4 @@ public class Solution {
         }
         return (double) sum / (double) (salary.length - 2);
     }
-
-    public static void main(String[] args) {
-        int[] salary = {4000,3000,1000,2000};
-        Solution sol = new Solution();
-        System.out.println(sol.average(salary));
-    }
 }
