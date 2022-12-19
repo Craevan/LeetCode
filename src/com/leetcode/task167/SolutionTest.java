@@ -33,6 +33,4 @@ class SolutionTest {
         int[] actual = solution.twoSum(array, target);
         assertArrayEquals(expected, actual);
     }
-
-
 }

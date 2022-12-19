@@ -7,10 +7,13 @@ public class Solution {
             int first = numbers[i];
             int goal = target - first;
             int position = i + 1;
-            if (position < numbers.length && checkGoal(numbers, i + 1, goal) != -1) {
-                result[0] = i + 1;
-                result[1] = checkGoal(numbers, i + 1, goal) + 1;
-                return result;
+            if (position < numbers.length) {
+                int goalPosition = checkGoal(numbers, i + 1, goal);
+                if (goalPosition != -1) {
+                    result[0] = i + 1;
+                    result[1] = goalPosition + 1;
+                    return result;
+                }
             }
         }
         return null;
