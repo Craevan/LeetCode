@@ -1,10 +1,7 @@
 package com.leetcode.task13;
 
 public class RomanToInteger {
-    public static void main(String[] args) {
-        RomanToInteger romanToInteger = new RomanToInteger();
-        System.out.println(romanToInteger.romanToInt("MCMXCIV"));
-    }
+
     public int romanToInt(String s) {
         char[] chars = s.toCharArray();
         int current;
